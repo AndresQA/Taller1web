@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 
 .banner {
-    background-image: url("./src/img/backgroundinfo.jpg");
+    background-image: url("/src/img/backgroundinfo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -135,7 +135,7 @@ nav ul li a:hover {
 .banner__left {
     width: 550px;
     height: 450px;
-    background-image: url("./src/img/info.png");
+    background-image: url("/src/img/info.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -149,7 +149,7 @@ nav ul li a:hover {
 
 
 .about {
-    background-image: url("./src/img/abouybackground.jpg");
+    background-image: url("/src/img/abouybackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -165,7 +165,7 @@ nav ul li a:hover {
 .about__righttop{
     width: 730px;
     height: 440px;
-    background-image: url("./src/img/description.png");
+    background-image: url("/src/img/description.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -224,31 +224,55 @@ nav ul li a:hover {
 
 }
 
-
-.spaceC {
-    margin-bottom: 40px;
+.details{
+    margin: 80px 0 80px 0;
 }
 
-
-
-.description {
-    text-align: right;
-    margin-bottom: 50px;
-}
-
-.characteristics {
+.details__card{
     display: flex;
     justify-content: space-around;
-    align-content: center;
-
+    align-content: center center;
 }
 
-.cards {
-    width: 20%;
+
+.details__card1img1{
+    width: 435px;
+    height: 305px;
+    background-image: url("/src/img/card1img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
+.details__card1img2{
+    width: 435px;
+    height: 305px;
+    background-image: url("/src/img/card2img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.details__card1img3{
+    width: 435px;
+    height: 305px;
+    background-image: url("/src/img/card3img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.details__card1body{
+    width: 435px;
+    height: 535px;
+    background-color: #C20280;
+}
+
+
+
 
 .explorer {
-    background-image: url("./src/img/explora.jpg");
+    background-image: url("/src/img/explora.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -257,7 +281,7 @@ nav ul li a:hover {
 }
 
 .media {
-    background-image: url("./src/img/media.png");
+    background-image: url("/src/img/media.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
