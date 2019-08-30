@@ -180,8 +180,10 @@ nav ul li a:hover {
     LINE-HEIGHT: 50px;
 }
 
-.about__righttop p {
+p{
     font-size: 25px;
+}
+.about__righttop p {
     margin: 40px;
     margin-left: 68px;
     margin-right: 60px;
@@ -211,7 +213,7 @@ nav ul li a:hover {
 }
 
 .about__rightbottom img{
-    margin: 0px 40px 0px 40px;
+    margin: 0px 40px 0px 35px;
 }
 
 .title {
@@ -228,6 +230,19 @@ nav ul li a:hover {
     margin: 80px 0 80px 0;
 }
 
+.details h1{
+ font-size: 50px;
+ text-align: center;
+ LINE-HEIGHT: 45px;
+ padding-top: 10px;
+}
+
+.details p{
+    LINE-HEIGHT: 23px;
+    margin: 25px 25px 0 25px;
+    text-align: center;
+}
+
 .details__card{
     display: flex;
     justify-content: space-around;
@@ -235,7 +250,7 @@ nav ul li a:hover {
 }
 
 
-.details__card1img1{
+.details__cardimg1{
     width: 435px;
     height: 305px;
     background-image: url("/src/img/card1img.png");
@@ -244,7 +259,7 @@ nav ul li a:hover {
     background-position: center center;
 }
 
-.details__card1img2{
+.details__cardimg2{
     width: 435px;
     height: 305px;
     background-image: url("/src/img/card2img.png");
@@ -253,7 +268,7 @@ nav ul li a:hover {
     background-position: center center;
 }
 
-.details__card1img3{
+.details__cardimg3{
     width: 435px;
     height: 305px;
     background-image: url("/src/img/card3img.png");
@@ -262,11 +277,13 @@ nav ul li a:hover {
     background-position: center center;
 }
 
-.details__card1body{
+.details__cardbody{
     width: 435px;
     height: 535px;
     background-color: #C20280;
 }
+
+
 
 
 
@@ -280,11 +297,47 @@ nav ul li a:hover {
     padding-top: 780px;
 }
 
-.media {
-    background-image: url("/src/img/media.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding-bottom: 110px;
-    padding-top: 780px;
+
+.media{
+    position: relative;
+}
+
+
+.media__background{
+    width: 100%;
+    height: 980px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.media__trailer{
+    position: absolute;
+    object-fit: cover;
+    top: 220px;
+    left: 130px;
+    width: 1000px;
+    z-index: -1;
+}
+
+
+
+.requeriments{
+    width: 100%;
+    background-color: #C20280;
+    display: flex;
+    justify-content: space-between;
+}
+
+.requeriments h1{
+    font-size: 35px;
+}
+
+.requeriments__left{
+    margin: 50px;
+    
+}
+
+.requeriments__right{
+    margin: 50px;
+    
 }
