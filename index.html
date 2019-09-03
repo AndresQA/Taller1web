@@ -13,20 +13,20 @@
 <body ondragstart="return false">
 
     <header>
-        <div class="ancho">
-            <div class="logo">
+        <div class="mainnav">
+            <div class="mainnav__logo">
                 <a href="#">
-                    <img src="./src/img/logo.png" class="imglogo" alt="">
+                    <img src="./src/img/logo.png" class="mainnav__logoimg" alt="">
                 </a>
             </div>
 
             <nav>
                 <ul>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Caracteristicas</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Requisitos</a></li>
-                    <li><a href="#">Comprar</a></li>
+                    <li><a href="#aboutthegame">Acerca de</a></li>
+                    <li><a href="#characteristics">Caracteristicas</a></li>
+                    <li><a href="#galery">Galeria</a></li>
+                    <li><a href="#request">Requisitos</a></li>
+                    <li><a href="https://store.steampowered.com/app/233270/Far_Cry_3__Blood_Dragon/" target="_blank" class="navbuy">Comprar</a></li>
 
                 </ul>
             </nav>
@@ -50,7 +50,7 @@
                     <p>Corre el año 2007. Es el futuro. La Tierra ha sido devastada por una guerra nuclear y es
                         necesario buscar nuevas vías para la paz.</p>
 
-                    <a href="#"><img src="./src/img/masinfo.png" alt=""></a>
+                    <a href="#aboutthegame"><img src="./src/img/masinfo.png" alt=""></a>
                 </div>
 
                 <div class="banner__leftbottom">
@@ -70,7 +70,7 @@
 
 
 
-        <h1 class="title">Acerca del juego</h1>
+        <h1 class="title" id="aboutthegame">Acerca del juego</h1>
 
         <Section class="about">
 
@@ -100,7 +100,7 @@
 
         </Section>
 
-        <h1 class="title spaceC">Caracteristicas principales</h1>
+        <h1 class="title spaceC" id="characteristics">Caracteristicas principales</h1>
 
         <section class="details">
 
@@ -178,15 +178,16 @@
 
         </section>
 
-        <h1 class="title">Galeria</h1>
+        <h1 class="title" id="galery">Galeria</h1>
 
         <section class="media">
 
             <img src="/src/img/galeria.png" class="media__background" alt="">
-            <video src="/src/img/trailer.mp4" class="media__trailer" autoplay="autoplay" muted="muted" controls loop></video>
+            <video src="/src/img/trailer.mp4" class="media__trailer" autoplay="autoplay" muted="muted" controls
+                loop></video>
         </section>
 
-        <h1 class="title">Requisitos del Sistema</h1>
+        <h1 class="title" id="request">Requisitos del Sistema</h1>
 
         <section class="requeriments">
 
@@ -222,12 +223,33 @@
 
         </section>
 
+        <h1 class="title">Enterate primero</h1>
+
+        <section class="newsletter">
+
+            <div class="newsletter__log">
+                <h2 class="newsletter__logtitle">Suscribete a nuestro Newsletter</h2>
+                <input type="mail" class="newsletter__logemail" placeholder="Ingresa tu correo electronico">
+                <a href="#"><img src="/src/img/suscribirse.png" class="newsletter__logsuscribe" alt=""></a>
+
+            </div>
+
+        </section>
 
 
 
     </main>
 
     <footer>
+
+        <img src="/src/img/logo.png" class="mainnav__logoimg" alt="">
+
+        <p>© 2012 Ubisoft Entertainment. All Rights Reserved. Far Cry, Ubisoft and the Ubisoft logo are trademarks of
+            Ubisoft Entertainment in the US and/or other countries. Based on Crytek’s original Far Cry directed by Cevat
+            Yerli. Powered by Crytek’s technology “CryEngine”. Playstation, PS3 are trademarks or registred trademarks
+            of Sony Computer Entertainment Inc. Xbox, Xbox 360, Xbox Live, and the Xbox logos are trademarks of the
+            Microsoft group of companies and are used under license from Microsoft. Software platform Log (TM and ©) EMA
+            2006</p>
 
     </footer>
 
