@@ -20,14 +20,20 @@
                 </a>
             </div>
 
+            <div class="mainnav__logohamb">
+                <div>
+                    <img src="./src/img/menu.png" class="mainnav__logoimg" alt="">
+                </div>
+            </div>
+
             <nav>
                 <ul>
-                    <li><a href="#aboutthegame">Acerca de</a></li>
-                    <li><a href="#characteristics">Caracteristicas</a></li>
-                    <li><a href="#galery">Galeria</a></li>
-                    <li><a href="#request">Requisitos</a></li>
+                    <li><a href="#aboutthegame" id="listmenu">Acerca de</a></li>
+                    <li><a href="#characteristics" id="listmenu">Caracteristicas</a></li>
+                    <li><a href="#galery" id="listmenu">Galeria</a></li>
+                    <li><a href="#request" id="listmenu">Requisitos</a></li>
                     <li><a href="https://store.steampowered.com/app/233270/Far_Cry_3__Blood_Dragon/" target="_blank"
-                            class="">Comprar</a></li>
+                            class="" id="listmenu">Comprar</a></li>
 
                 </ul>
             </nav>
@@ -53,7 +59,9 @@
 
                     <a href="#aboutthegame"><img src="./src/img/masinfo.png" alt=""></a>
 
+                </div>
 
+                <div>
                     <a href="https://store.steampowered.com/app/233270/Far_Cry_3__Blood_Dragon/" target="_blank"><img
                             src="./src/img/comprar.png" class="banner__leftbottom" alt=""></a>
                 </div>
@@ -162,6 +170,7 @@
 
                         <h1>Con todos los cliches posibles.</h1>
 
+
                         <p>El icono de las pelis de acción de Hollywood, Michael Biehn (Terminator, Aliens y The
                             Abyss), vuelve en esta explosiva visión de ciencia ficción de los 80, ambientada en un
                             oscuro futuro con cíborgs y mutantes. Así que enciende tu vídeo VHS, conecta tu ciberconsola
@@ -180,6 +189,149 @@
         <h1 class="title">Explora</h1>
 
         <section class="explorer">
+            <div id="enemigo1">
+                <h1>Lanzallamas Pesado</h1>
+
+                <hr>
+
+                <p>Vestidos con un chleco pesado ignífugo, estos hombres son fuertes como bueyes y sienten un gran
+                    placer al quemar todo loq ue pueden hasta reducirlo a cenizas humeantes. Incontables civiles han
+                    muerto a sus manos.
+                </p>
+                <br>
+                <div>
+                    <img class="icon" src="./src/img/hp.png" alt="">
+                    <p>Vitalidad: 8300 HP</p>
+                </div>
+
+                <div>
+                    <img class="icon" src="./src/img/pesadollamas.png" alt="">
+                    <p>Marcador</p>
+
+                </div>
+
+            </div>
+
+            <div id="target1" onmouseover="enemigo1.display = 'block'" onmouseout="enemigo1.display = 'none'"
+                onmousemove="main1()"></div>
+
+
+
+
+
+            <div id="enemigo2">
+                <h1>Lanzadores de Molotov</h1>
+
+                <hr>
+
+                <p>Permanentemente colocados con su propio material, estos pirómanos no necesitan excusas para iniciar
+                    un incendio.</p>
+                <br>
+                <div>
+                    <img class="icon" src="./src/img/hp.png" alt="">
+                    <p>Vitalidad: 1700 HP</p>
+                </div>
+
+                <div>
+                    <img class="icon" src="./src/img/molotov.png" alt="">
+                    <p>Marcador</p>
+
+                </div>
+
+            </div>
+
+            <div id="target2" onmouseover="enemigo2.display = 'block'" onmouseout="enemigo2.display = 'none'"
+                onmousemove="main2()"></div>
+
+
+
+
+
+
+            <div id="enemigo3">
+                <h1>Asaltante</h1>
+
+                <hr>
+
+                <p>Los asaltantes son matones corrientes dotados de armamento básico. Son una fuerza a tener en cuenta
+                    si los encuentras en grandes cantidades.</p>
+                <br>
+                <div>
+                    <img class="icon" src="./src/img/hp.png" alt="">
+                    <p>Vitalidad: 2000 HP</p>
+                </div>
+
+                <div>
+                    <img class="icon" src="./src/img/asalto.png" alt="">
+                    <p>Marcador</p>
+
+                </div>
+
+            </div>
+
+            <div id="target3" onmouseover="enemigo3.display = 'block'" onmouseout="enemigo3.display = 'none'"
+                onmousemove="main3()"></div>
+
+
+
+
+
+
+
+
+            <div id="enemigo4">
+                <h1>Francotiradores</h1>
+
+                <hr>
+
+                <p>Estos especialistas del largo alcance apoyan a sus aliados a distancia con rifles de francotirador de
+                    gran calibre. Presta atención a sus delatadoras miras láser.</p>
+                <br>
+                <div>
+                    <img class="icon" src="./src/img/hp.png" alt="">
+                    <p>Vitalidad: 2000 HP</p>
+                </div>
+
+                <div>
+                    <img class="icon" src="./src/img/franco.png" alt="">
+                    <p>Marcador</p>
+
+                </div>
+
+            </div>
+
+            <div id="target4" onmouseover="enemigo4.display = 'block'" onmouseout="enemigo4.display = 'none'"
+                onmousemove="main4()"></div>
+
+
+
+
+
+
+            <div id="enemigo5">
+                <h1>Artilleros Pesados</h1>
+
+                <hr>
+
+                <p>Armados con una brutal ametralladora ligera y fuertemente blindados, estos hombres son la encarnación
+                    misma del terror. Enfréntate a ellos si te atreves.</p>
+                <br>
+                <div>
+                    <img class="icon" src="./src/img/hp.png" alt="">
+                    <p>Vitalidad: 8300 HP</p>
+                </div>
+
+                <div>
+                    <img class="icon" src="./src/img/pesadollamas.png" alt="">
+                    <p>Marcador</p>
+
+                </div>
+
+            </div>
+
+            <div id="target5" onmouseover="enemigo5.display = 'block'" onmouseout="enemigo5.display = 'none'"
+                onmousemove="main5()"></div>
+
 
         </section>
 
@@ -198,14 +350,14 @@
             <div class="requeriments__left">
                 <h1>Requisitos mínimos:</h1>
 
-                <p>Sistema operativo: Windows XP (SP3) / Windows Vista (SP2) / Windows 7 (SP1) / Windows 8</p>
-                <p>Precesador: 2.66 GHz Intel Core™2 Duo E6700 o 3.00 GHz AMD Athlon 64 X2 6000+</p>
-                <p>Memoria: 2 GB</p>
-                <p>Trajeta gráfica: 512 MB DirectX 9.0c</p>
-                <p>DirectX: DirectX 9.0c</p>
-                <p>Disco duro: 3 GB de espacio libre</p>
-                <p>Sonido: Compatible con DirectX 9.0c</p>
-                <p>Otros: Requiere una cuenta en UPlay</p>
+                <p>•Sistema operativo: Windows XP (SP3) / Windows Vista (SP2) / Windows 7 (SP1) / Windows 8</p>
+                <p>•Precesador: 2.66 GHz Intel Core™2 Duo E6700 o 3.00 GHz AMD Athlon 64 X2 6000+</p>
+                <p>•Memoria: 2 GB</p>
+                <p>•Trajeta gráfica: 512 MB DirectX 9.0c</p>
+                <p>•DirectX: DirectX 9.0c</p>
+                <p>•Disco duro: 3 GB de espacio libre</p>
+                <p>•Sonido: Compatible con DirectX 9.0c</p>
+                <p>•Otros: Requiere una cuenta en UPlay</p>
 
             </div>
 
@@ -213,15 +365,15 @@
 
                 <h1>Requisitos recomendados:</h1>
 
-                <p><strong>Sistema operativo:</strong> Sistema operativo: Windows XP (SP3) / Windows Vista (SP2) /
+                <p>•Sistema operativo: Sistema operativo: Windows XP (SP3) / Windows Vista (SP2) /
                     Windows 7 (SP1) / Windows 8</p>
-                <p>Precesador: 2.93 GHz Intel Core i3-530 o 3.10 GHz AMD Phenom II X2 550 o superior</p>
-                <p>Memoria: 4 GB</p>
-                <p>Trajeta gráfica: 1024 MB. Compatible con DirectX 11–</p>
-                <p>DirectX: DirectX 11</p>
-                <p>Disco duro: 3 GB de espacio libre</p>
-                <p>Sonido: 5.1 surround</p>
-                <p>Otros: Requiere una cuenta en UPlay</p>
+                <p>•Precesador: 2.93 GHz Intel Core i3-530 o 3.10 GHz AMD Phenom II X2 550 o superior</p>
+                <p>•Memoria: 4 GB</p>
+                <p>•Trajeta gráfica: 1024 MB. Compatible con DirectX 11–</p>
+                <p>•DirectX: DirectX 11</p>
+                <p>•Disco duro: 3 GB de espacio libre</p>
+                <p>•Sonido: 5.1 surround</p>
+                <p>•Otros: Requiere una cuenta en UPlay</p>
 
             </div>
 
@@ -256,6 +408,12 @@
             2006</p>
 
     </footer>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./src/script/menu.js"></script>
+    <script src="./src/script/interaction.js"></script>
+
+
 
 </body>
 
