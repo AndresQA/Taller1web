@@ -8,6 +8,7 @@
     <title>Far Cry Blood Dragon</title>
 
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="icon" type="image/png" href="./src/img/logo.png">
 </head>
 
 <body ondragstart="return false">
@@ -83,7 +84,7 @@
 
 
 
-        <h1 class="title" id="aboutthegame">Acerca del juego</h1>
+        <h1 class="title first" id="aboutthegame">Acerca del juego</h1>
 
         <Section class="about">
 
@@ -104,9 +105,9 @@
 
             <div class="about__rightbottom">
 
-                <a href="#"><img src="./src/img/icpc.png" alt=""></a>
-                <a href="#"><img src="./src/img/icps3.png" alt=""></a>
-                <a href="#"><img src="./src/img/icx.png" alt=""></a>
+                <a href="https://store.steampowered.com/app/233270/Far_Cry_3__Blood_Dragon/"><img src="./src/img/icpc.png" alt=""></a>
+                <a href="https://store.playstation.com/es-co/product/UP0001-NPUB31142_00-FC3BLOODDRAGONFG"><img src="./src/img/icps3.png" alt=""></a>
+                <a href="https://marketplace.xbox.com/es-es/Product/FCry-3-Blood-Dragon/66acd000-77fe-1000-9115-d802584113bf"><img src="./src/img/icx.png" alt=""></a>
 
             </div>
 
@@ -186,151 +187,100 @@
 
         </section>
 
-        <h1 class="title">Explora</h1>
+        <h1 class="title">Conoce</h1>
 
         <section class="explorer">
-            <div id="enemigo1">
-                <h1>Lanzallamas Pesado</h1>
 
-                <hr>
+            <img class="fotage" src="./src/img/explora.jpg" alt="">
 
-                <p>Vestidos con un chleco pesado ignífugo, estos hombres son fuertes como bueyes y sienten un gran
-                    placer al quemar todo loq ue pueden hasta reducirlo a cenizas humeantes. Incontables civiles han
-                    muerto a sus manos.
-                </p>
-                <br>
-                <div>
-                    <img class="icon" src="./src/img/hp.png" alt="">
-                    <p>Vitalidad: 8300 HP</p>
+
+            <div class="explorer__target">
+
+                <div id="enemigo1" class="explorer__targetinfo">
+                    <img class="slider__img" src="./src/img/HEAVY_PYRO.png" alt="">
+
+
                 </div>
 
-                <div>
-                    <img class="icon" src="./src/img/pesadollamas.png" alt="">
-                    <p>Marcador</p>
+                <div class="target" id="target1" onmouseover="enemigo1.display = 'block'"
+                    onmouseout="enemigo1.display = 'none'" onmousemove="main1()"></div>
 
+
+
+
+
+                <div id="enemigo2" class="explorer__targetinfo">
+                    <img class="slider__img" src="./src/img/MOLOTOX.png" alt="">
+
+                </div>
+
+                <div class="target" id="target2" onmouseover="enemigo2.display = 'block'"
+                    onmouseout="enemigo2.display = 'none'" onmousemove="main2()"></div>
+
+
+
+
+
+
+                <div id="enemigo3" class="explorer__targetinfo">
+                    <img class="slider__img" src="./src/img/ASSAULTER.png" alt="">
+
+
+                </div>
+
+                <div class="target" id="target3" onmouseover="enemigo3.display = 'block'"
+                    onmouseout="enemigo3.display = 'none'" onmousemove="main3()"></div>
+
+
+
+
+
+
+
+
+                <div id="enemigo4" class="explorer__targetinfo">
+                    <img class="slider__img" src="./src/img/SNIPER.png" alt="">
+
+                </div>
+
+                <div class="target" id="target4" onmouseover="enemigo4.display = 'block'"
+                    onmouseout="enemigo4.display = 'none'" onmousemove="main4()"></div>
+
+
+
+
+
+
+                <div id="enemigo5" class="explorer__targetinfo">
+                    <img class="slider__img" src="./src/img/HEAVY_GUNNER.png" alt="">
+
+                </div>
+
+                <div class="target" id="target5" onmouseover="enemigo5.display = 'block'"
+                    onmouseout="enemigo5.display = 'none'" onmousemove="main5()"></div>
+
+
+
+
+            </div>
+
+            <div class="explorer__slider">
+                <div class="explorer__slidertape">
+
+                    <img class="slider__img" src="./src/img/ASSAULTER.png" alt="">
+                    <img class="slider__img" src="./src/img/HEAVY_GUNNER.png" alt="">
+                    <img class="slider__img" src="./src/img/HEAVY_PYRO.png" alt="">
+                    <img class="slider__img" src="./src/img/MOLOTOX.png" alt="">
+                    <img class="slider__img" src="./src/img/SNIPER.png" alt="">
                 </div>
 
             </div>
 
-            <div id="target1" onmouseover="enemigo1.display = 'block'" onmouseout="enemigo1.display = 'none'"
-                onmousemove="main1()"></div>
-
-
-
-
-
-            <div id="enemigo2">
-                <h1>Lanzadores de Molotov</h1>
-
-                <hr>
-
-                <p>Permanentemente colocados con su propio material, estos pirómanos no necesitan excusas para iniciar
-                    un incendio.</p>
-                <br>
-                <div>
-                    <img class="icon" src="./src/img/hp.png" alt="">
-                    <p>Vitalidad: 1700 HP</p>
-                </div>
-
-                <div>
-                    <img class="icon" src="./src/img/molotov.png" alt="">
-                    <p>Marcador</p>
-
-                </div>
+            <div class="container__button">
+                <button>Siguiente</button>
 
             </div>
 
-            <div id="target2" onmouseover="enemigo2.display = 'block'" onmouseout="enemigo2.display = 'none'"
-                onmousemove="main2()"></div>
-
-
-
-
-
-
-            <div id="enemigo3">
-                <h1>Asaltante</h1>
-
-                <hr>
-
-                <p>Los asaltantes son matones corrientes dotados de armamento básico. Son una fuerza a tener en cuenta
-                    si los encuentras en grandes cantidades.</p>
-                <br>
-                <div>
-                    <img class="icon" src="./src/img/hp.png" alt="">
-                    <p>Vitalidad: 2000 HP</p>
-                </div>
-
-                <div>
-                    <img class="icon" src="./src/img/asalto.png" alt="">
-                    <p>Marcador</p>
-
-                </div>
-
-            </div>
-
-            <div id="target3" onmouseover="enemigo3.display = 'block'" onmouseout="enemigo3.display = 'none'"
-                onmousemove="main3()"></div>
-
-
-
-
-
-
-
-
-            <div id="enemigo4">
-                <h1>Francotiradores</h1>
-
-                <hr>
-
-                <p>Estos especialistas del largo alcance apoyan a sus aliados a distancia con rifles de francotirador de
-                    gran calibre. Presta atención a sus delatadoras miras láser.</p>
-                <br>
-                <div>
-                    <img class="icon" src="./src/img/hp.png" alt="">
-                    <p>Vitalidad: 2000 HP</p>
-                </div>
-
-                <div>
-                    <img class="icon" src="./src/img/franco.png" alt="">
-                    <p>Marcador</p>
-
-                </div>
-
-            </div>
-
-            <div id="target4" onmouseover="enemigo4.display = 'block'" onmouseout="enemigo4.display = 'none'"
-                onmousemove="main4()"></div>
-
-
-
-
-
-
-            <div id="enemigo5">
-                <h1>Artilleros Pesados</h1>
-
-                <hr>
-
-                <p>Armados con una brutal ametralladora ligera y fuertemente blindados, estos hombres son la encarnación
-                    misma del terror. Enfréntate a ellos si te atreves.</p>
-                <br>
-                <div>
-                    <img class="icon" src="./src/img/hp.png" alt="">
-                    <p>Vitalidad: 8300 HP</p>
-                </div>
-
-                <div>
-                    <img class="icon" src="./src/img/pesadollamas.png" alt="">
-                    <p>Marcador</p>
-
-                </div>
-
-            </div>
-
-            <div id="target5" onmouseover="enemigo5.display = 'block'" onmouseout="enemigo5.display = 'none'"
-                onmousemove="main5()"></div>
 
 
         </section>
@@ -338,8 +288,8 @@
         <h1 class="title" id="galery">Galeria</h1>
 
         <section class="media">
-            <video src="/src/img/trailer.mp4" class="media__trailer" autoplay="autoplay" muted="muted" loop></video>
-            <img src="/src/img/galeria.png" class="media__background" alt="">
+            <video src="./src/img/trailer.mp4" class="media__trailer" autoplay="autoplay" muted="muted" loop></video>
+            <img src="./src/img/galeria.png" class="media__background" alt="">
 
         </section>
 
@@ -386,7 +336,7 @@
             <div class="newsletter__log">
                 <h2 class="newsletter__logtitle">Suscribete a nuestro Newsletter</h2>
                 <input type="mail" class="newsletter__logemail" placeholder="Ingresa tu correo electronico">
-                <a href="#"><img src="/src/img/suscribirse.png" class="newsletter__logsuscribe" alt=""></a>
+                <a href="#"><img src="./src/img/suscribirse.png" class="newsletter__logsuscribe" alt=""></a>
 
             </div>
 
@@ -398,7 +348,7 @@
 
     <footer>
 
-        <img src="/src/img/logo.png" class="mainnav__logoimg" alt="">
+        <img src="./src/img/logo.png" class="mainnav__logoimg" alt="">
 
         <p>© 2012 Ubisoft Entertainment. All Rights Reserved. Far Cry, Ubisoft and the Ubisoft logo are trademarks of
             Ubisoft Entertainment in the US and/or other countries. Based on Crytek’s original Far Cry directed by Cevat
@@ -410,7 +360,6 @@
     </footer>
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="./src/script/menu.js"></script>
     <script src="./src/script/interaction.js"></script>
 
 

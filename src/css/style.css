@@ -21,7 +21,7 @@ html {
 body {
     font-family: "BlenderRegular";
     background-color: rgb(19, 19, 19);
-
+    overflow-x: hidden;
 }
 
 h1 {
@@ -149,6 +149,8 @@ hr {
 
 
 
+
+
 .banner {
     background-image: url("/src/img/backgroundinfo.jpg");
     background-repeat: no-repeat;
@@ -261,6 +263,7 @@ p {
 
 }
 
+
 .details {
     margin: 80px 0 80px 0;
 }
@@ -327,20 +330,41 @@ p {
     background-color: #C20280;
 }
 
+.container__button {
+    display: none;
+}
 
+.explorer__slider {
+    overflow: hidden;
+    width: 80%;
+    margin: 30px auto;
+}
 
+.explorer__slidertape {
+    
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
 
+.explorer__slidertape--inactive {
+    transition: none;
+}
+
+.slider__img {
+    width: 100%;
+}
 
 
 .explorer {
-    background-image: url("/src/img/explora.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    width: 100%;
     display: flex;
-    height: 900px;;
     align-items: flex-end;
+    position: relative;
+}
+
+.explorer img {
+    width: 100%;
+
 }
 
 .explorer h1 {
@@ -359,132 +383,70 @@ p {
 }
 
 
-
-#enemigo1 {
+.explorer__target {
     position: absolute;
-    background: rgba(194, 2, 127, 0.89);
-    width: 400px;
-    height: auto;
-    display: none;
-    z-index: 99;
-    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: flex-end;
 }
 
-#enemigo1 div {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-}
+
+
+
 
 #target1 {
-    border: 1px solid #FFF;
     width: 400px;
     height: 56%;
+
 }
 
 
 
-#enemigo2 {
-    position: absolute;
-    background: rgba(194, 2, 127, 0.89);
-    width: 400px;
-    height: auto;
-    display: none;
-    z-index: 99;
-    padding: 30px;
-}
 
-#enemigo2 div {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-}
 
 #target2 {
-    border: 1px solid #FFF;
     width: 400px;
     height: 65%;
 
+
 }
 
 
 
 
-#enemigo3 {
-    position: absolute;
-    background: rgba(194, 2, 127, 0.89);
-    width: 400px;
+.explorer__targetinfo {
+    position: fixed;
+    width: 300px;
     height: auto;
     display: none;
     z-index: 99;
-    padding: 30px;
-}
-
-#enemigo3 div {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
+    
 }
 
 #target3 {
-    border: 1px solid #FFF;
     width: 400px;
     height: 100%;
 
 
+
 }
 
-
-
-
-
-#enemigo4 {
-    position: absolute;
-    background: rgba(194, 2, 127, 0.89);
-    width: 400px;
-    height: auto;
-    display: none;
-    z-index: 99;
-    padding: 30px;
-}
-
-#enemigo4 div {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-}
 
 #target4 {
-    border: 1px solid #FFF;
     width: 400px;
     height: 65%;
 
+
 }
 
-
-
-
-
-#enemigo5 {
-    position: absolute;
-    background: rgba(194, 2, 127, 0.89);
-    width: 400px;
-    height: auto;
-    display: none;
-    z-index: 99;
-    padding: 30px;
-}
-
-#enemigo5 div {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-}
 
 #target5 {
-    border: 1px solid #FFF;
     width: 400px;
     height: 56%;
+
 
 
 }
@@ -616,9 +578,13 @@ footer p {
 
     }
 
+
 }
 
 
+.explorer__slider {
+    display: none;
+}
 
 
 
@@ -640,6 +606,12 @@ footer p {
 
 }
 
+@media (max-width: 434px){ 
+.first{
+    margin-top: 60px;
+}
+}
+
 
 
 @media (max-width: 500px) {
@@ -657,7 +629,6 @@ footer p {
 
     .banner__lefttop {
         width: 100%;
-        height: auto;
         background-color: #C20280;
         padding-bottom: 30px;
 
@@ -667,6 +638,7 @@ footer p {
         margin-top: 20px;
         margin-bottom: 30px;
     }
+
 
 
 
@@ -708,6 +680,42 @@ footer p {
         padding-left: 12px;
 
     }
+
+    .explorer__target {
+        display: none;
+    }
+
+
+    .explorer__slider {
+        display: block;
+    }
+
+    .fotage {
+        display: none;
+    }
+
+    .explorer {
+        display: block;
+    }
+
+    .container__button {
+        display: flex;
+
+        margin-top: 20px;
+    }
+
+    .container__button button {
+        margin: auto;
+        width: 300px;
+        height: 30px;
+        background: #C20280;
+        border: none;
+        font-family: "BlenderBold";
+        font-size: 20px;
+        outline:0px;
+    }
+
+
 
 
 
@@ -752,7 +760,6 @@ footer p {
     }
 }
 
-@media (max-width: 1372px) {}
 
 @media (max-width: 1016px) {
 
@@ -790,7 +797,7 @@ footer p {
     }
 
     .mainnav__logohamb div {
-        margin: auto 0;
+        margin: auto 0px;
     }
 
     .mainnav__logoimg {
