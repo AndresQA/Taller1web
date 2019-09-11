@@ -10,12 +10,12 @@ html {
 
 @font-face {
     font-family: "BlenderBold";
-    src: url("./src/font/Blender-Pro-Bold.otf");
+    src: url("../../src/font/Blender-Pro-Bold.otf");
 }
 
 @font-face {
     font-family: "BlenderRegular";
-    src: url("./src/font/Blender_Pro_Book.ttf");
+    src: url("../../src/font/Blender_Pro_Book.ttf");
 }
 
 body {
