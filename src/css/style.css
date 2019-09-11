@@ -10,12 +10,12 @@ html {
 
 @font-face {
     font-family: "BlenderBold";
-    src: url("/src/font/Blender-Pro-Bold.otf");
+    src: url("./src/font/Blender-Pro-Bold.otf");
 }
 
 @font-face {
     font-family: "BlenderRegular";
-    src: url("/src/font/Blender_Pro_Book.ttf");
+    src: url("./src/font/Blender_Pro_Book.ttf");
 }
 
 body {
@@ -152,7 +152,7 @@ hr {
 
 
 .banner {
-    background-image: url("/src/img/backgroundinfo.jpg");
+    background-image: url("./src/img/backgroundinfo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -168,7 +168,7 @@ hr {
 .banner__left {
     width: 550px;
     height: 450px;
-    background-image: url("/src/img/info.png");
+    background-image: url("./src/img/info.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -184,7 +184,7 @@ hr {
 
 
 .about {
-    background-image: url("/src/img/abouybackground.jpg");
+    background-image: url("./src/img/abouybackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -200,7 +200,7 @@ hr {
 .about__righttop {
     width: 730px;
     height: 440px;
-    background-image: url("/src/img/description.png");
+    background-image: url("./src/img/description.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -300,7 +300,7 @@ p {
 .details__cardimg1 {
     width: 435px;
     height: 305px;
-    background-image: url("/src/img/card1img.png");
+    background-image: url("./src/img/card1img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -309,7 +309,7 @@ p {
 .details__cardimg2 {
     width: 435px;
     height: 305px;
-    background-image: url("/src/img/card2img.png");
+    background-image: url("./src/img/card2img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -318,7 +318,7 @@ p {
 .details__cardimg3 {
     width: 435px;
     height: 305px;
-    background-image: url("/src/img/card3img.png");
+    background-image: url("./src/img/card3img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -504,7 +504,7 @@ p {
 }
 
 .newsletter {
-    background-image: url("/src/img/newsletter.jpg");
+    background-image: url("./src/img/newsletter.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
